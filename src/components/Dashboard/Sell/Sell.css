@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.selected-screen-container
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.selected-screen-map-container
+{
+    height: 100%;
+    width: 55%;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.selected-screen-right-content
+{
+    height: 100%;
+    width: 45%;
+    padding: 10px;
+}
+.selected-screen-right-content-padding
+{
+    height: 100%;
+    width: 100%;
+}
+.sell-form-title
+{
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-family: 1.3em;
+    color:rgb(136, 136, 136);
+}
+
+
+.sell-form
+{
+    height: 95%;
+    width: 100%;
+}
+.sell-form textarea
+{
+    padding: 5px;
+}
+.sell-form textarea:focus
+{
+    outline: none;
+    border: 1px solid rgb(129, 129, 129);
+}
+.triple-inputs
+{
+    width: 100%;
+    height: 16%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.single-text-area-input textarea
+{
+    width: 100%;
+    resize: none;
+    border: 1px solid rgb(168, 168, 168);
+}
+
+
+.submit-btn-sell-form-container
+{
+    padding: 10px;
+}
+.submit-btn-sell-form
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #ffb235;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+.submit-btn-sell-form:hover
+{
+    cursor: pointer;
+    color: black;
+    padding: 4px 17px;
+    transform: scale(1.02);
+    transition: color 0.6s ease, transform 0.2s ease;
+}
+.error-css
+{
+    
+    animation-name: error-display;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes error-display {
+    from {
+        color: transparent;
+
+    }
+    to {
+        color: red;
+    }
+}

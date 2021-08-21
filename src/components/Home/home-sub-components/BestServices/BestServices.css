@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.best-services-container
+{
+    height: 90vh;
+}
+.best-services-title
+{
+    height: 40%;
+    display: flex;
+    align-items: flex-end;
+}
+.best-services-align-under-search
+{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.best-services-align-title-center
+{
+    height: 50%;
+    width: 30%;
+}
+.best-services-main-title
+{
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.best-services-main-title span
+{
+    color: #ffb235;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 2.4em;
+    letter-spacing: 3px;
+}
+.best-services-second-title
+{
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(109, 109, 109);
+    font-size: 0.9em;
+}
+
+
+
+.best-services-cards-container
+{
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 30px;
+}
+
+.card-container
+{
+    height: 100%;
+    flex:1;
+
+    padding: 10px 20px;
+}
+.card-container-padding
+{
+    height: 100%;
+    width: 100%;
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 5px;
+
+}
+.card-container-icon-section
+{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-container-icon-section img
+{
+    height: 50%;
+}
+.card-container-title-section
+{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-container-title-section span
+{
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+    
+
+}
+.card-container-content-section
+{
+    height: 60%;
+    padding: 20px;
+}
+.card-container-content-section span
+{
+    color: rgb(117, 117, 117);
+    font-family: 'Poppins', sans-serif;
+}

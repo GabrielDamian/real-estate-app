@@ -1,5 +1,91 @@
-.footer-container
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');.footer-container
 {
     height: 50vh;
-    border: 1px solid magenta;
+    background-color: #2a292b;
+    padding: 40px 60px;
 }
+.footer-container-padding
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: rgb(121, 121, 121);
+    font-family: 'Poppins', sans-serif;
+    font-style: none;
+
+}
+.left-footer-content
+{
+    height: 100%;
+    width: 30%;
+}
+.left-footer-content img 
+{
+    height: 15px;
+    display: inline-block;
+    filter: invert(50%) sepia(0%) saturate(1%) hue-rotate(278deg) brightness(94%) contrast(94%);
+}
+
+
+.inline-elements 
+{
+    display: flex;
+    flex-direction: row;
+}
+.right-footer-content
+{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.social-media-footer-container
+{
+    margin: 10px 0px;
+}
+.social-media-footer-container img 
+{
+    height: 30px;   
+    margin: 0px 15px 0px 0px;
+}
+.blue-hover:hover{
+    filter: invert(46%) sepia(84%) saturate(6537%) hue-rotate(206deg) brightness(101%) contrast(103%);
+    transition: filter 0.3s ease;
+}
+.green-hover:hover{
+    filter: invert(52%) sepia(93%) saturate(2514%) hue-rotate(101deg) brightness(111%) contrast(101%);
+    transition: filter 0.3s ease;
+}
+.right-footer-link-category 
+{
+    height: 90%;
+    width: 50%;
+}
+.right-footer-links-title
+{
+    height: 25%;
+    width: 100%;
+    font-size: 1.2em;
+    color: white;
+}
+.right-footer-underline-title
+{
+    width: 20%;
+    border-bottom: 2px solid #ffb235;
+}
+.right-footer-links-link
+{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.right-footer-links-link span:hover
+{
+    color: white;
+    margin-left: 5px;
+    transition: color 0.4s ease, margin-left 0.5s ease;
+}
+

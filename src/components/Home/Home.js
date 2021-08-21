@@ -1,28 +1,28 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Home.css';
 import Footer from '../shared-components/Footer';
 import ParallaxIntro from './home-sub-components/ParallaxIntro/ParallaxIntro';
 import Menu from './home-sub-components/Menu/Menu';
+import SearchComponents from './home-sub-components/SearchComponent/SearchComponent';
+import BestServices from './home-sub-components/BestServices/BestServices';
+import SearchResults from './home-sub-components/SearchResults/SearchResults';
 
 const Home = ()=>{
+    const [showResults, setShowResults] = useState(null);
+
+    const changeHomeState = (newState)=>{
+        setShowResults(newState);
+    }
     return(
         <div class="home-container">
             <ParallaxIntro />
-            <div className="home-sticky-menu">
-                <Menu />
-            </div>
-            <div className="home-search-component">
-                <div className="home-search-form-itself">
+            <Menu showSignUp={true}/>
+            <SearchComponents changeHomeState={changeHomeState}/>
+            {showResults == null ? null:
+            <SearchResults filters={showResults}/>}
 
-                </div>
-            </div>
-            
-            <div className="home-best-services">
-                best services
-            </div>
-            <div className="home-latest-real-estate">
-                best services
-            </div>
+            <BestServices />
+
             <Footer />
         </div>
     )

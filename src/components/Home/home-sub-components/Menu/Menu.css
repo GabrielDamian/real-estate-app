@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');.home-sticky-menu
+{
+    width: 100%;
+    height: 12vh;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    background-color: rgb(0,0,0,0.6);
+
+}
 .menu-container
 {
     height: 100%;
@@ -8,7 +19,7 @@
 }
 .upper-menu
 {
-    height: 30%;
+    height: 40%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,6 +28,7 @@
 .contact-menu
 {
     height: 100%;
+    width: 30%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,27 +37,68 @@
 {
     height: 13px;
 }
+.upper-menu-social-media-contaier 
+{
+    height: 90%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
 .contact-menu span{
     margin-left: 5px;
     font-size: 14px;
     font-family: 'sans-serif';
 }
-.social-media-menu
+.right-upper-menu
 {
     height: 100%;
-    width: 12%;
+    width: 10%;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
-.social-media-menu img
+.right-upper-menu img
 {
     height: 60%;
+    
+}
+
+#signup-btn
+{
+    height: 80%;
+    width: 90%;
+    outline: none;
+    border: none;
+    background-color: #ffb235;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+#signup-btn:hover
+{
+    cursor: pointer;
+    color: black;
+    padding: 4px 17px;
+    transform: scale(1.1);
+    transition: color 0.6s ease, transform 0.2s ease;
+    
+}
+#signup-btn:focus
+{
+    outline: none;
+    border: none;
+}
+#signup-btn:active 
+{
+    border:1px solid black;
 }
 .lower-menu
 {
-    height: 70%;
+    height: 60%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -57,6 +110,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+.lower-menu-logo:hover
+{
+    cursor: pointer;
 }
 .lower-menu-logo img
 {
@@ -79,6 +136,30 @@
 {
     width: 50%;
     height: 100%;
-    border: 1px solid red;
-
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    font-size: 19px;
 }
+#fb-icon:hover
+{
+    filter: invert(49%) sepia(55%) saturate(5679%) hue-rotate(195deg) brightness(100%) contrast(87%);
+    transition: filter 0.1s ease;
+}
+#linkedin-icon:hover
+{
+    filter: invert(51%) sepia(19%) saturate(7496%) hue-rotate(184deg) brightness(99%) contrast(88%);
+    transition: filter 0.1s ease;
+}
+#skype-icon:hover
+{
+    filter: invert(55%) sepia(94%) saturate(825%) hue-rotate(184deg) brightness(106%) contrast(103%);
+    transition: filter 0.1s ease;
+}
+#whatsapp-icon:hover
+{
+    filter: invert(61%) sepia(87%) saturate(672%) hue-rotate(87deg) brightness(92%) contrast(96%);
+    transition: filter 0.1s ease;
+}
+
+
+

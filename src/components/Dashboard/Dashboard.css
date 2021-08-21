@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+.home-container
+{
+    height: 100vh;
+}
+
+.home-menu-bar
+{
+    height: 7vh;
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.38); 
+    box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.38);
+}
+.home-menu-bar-nav
+{
+    width: 15%;
+    height: 100%;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.home-menu-bar-nav span:hover
+{
+    cursor: pointer;
+}
+.home-nav-buy-container, .home-nav-sell-container
+{
+    height: 80%;
+    width: 50%;
+    
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    
+}
+.selected-span 
+{
+    /* color: #ffb235; */
+    
+    border-bottom: 2px solid #ffb235;
+    animation-name: selected-span-anim ;
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+}
+@keyframes selected-span-anim {
+    from {
+        color: black;
+        
+    }
+    to {
+        color: #ffb235;
+        font-size: 1.2em;
+    }
+  }
+.home-menu-user-icon
+{
+    min-height: 35px;
+    min-width: 90px;
+    margin-right: 20px;
+
+}
+.log-out-btn-home
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #ffb235;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+.log-out-btn-home:hover
+{
+    cursor: pointer;
+    color: black;
+    padding: 4px 17px;
+    transform: scale(1.1);
+    transition: color 0.6s ease, transform 0.2s ease;
+}
+/*home content */
+.home-content
+{
+
+    height: 90vh;
+    width: 100%;
+}
+.dashboard-menu-logo-container
+{
+    height: 100%;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.dashboard-menu-logo-container img
+{
+    height: 80%;
+}
+.dashboard-menu-logo-container img:hover
+{
+    cursor: pointer;
+}

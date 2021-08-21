@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.other-prop-contaier
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.other-item-container
+{
+    height: 100%;
+    width: 33.33%;
+    margin: 15px;
+}
+.other-item-padding
+{
+    height: 100%;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 11px -4px #000000; 
+    box-shadow: 0px 0px 11px -4px #000000;
+
+}
+.other-item-photo
+{
+    height: 50%;
+}
+.other-item-photo img
+{   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.other-item-middle-info
+{
+    height: 30%;
+}
+
+.other-middle-title
+{
+    height: 50%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 20px;
+}
+.other-middle-infos
+{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.middle-info-box
+{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+.middle-info-box img
+{
+    width: 20px;
+}
+.middle-info-box span
+{
+    font-size: 0.7em;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 5px;
+}
+
+.other-item-bottom-info
+{
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+.other-item-bottom-info-box
+{
+    height: 100%;
+    width: 50%;
+}
+.bottom-info-box-proce-itself
+{
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.other-item-bottom-btn-redirect
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-itself
+{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb235;
+}
+.btn-itself span
+{
+
+    font-family: 'Poppins';
+    font-size: 0.9em;
+}
+.btn-itself:hover
+{
+    color: white;
+    transform: scale(1.1);
+    transition: color 0.3s ease, transform 0.3s ease;
+} 

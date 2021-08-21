@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.signup-container
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../images/bg-signup.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+.sign-up-container-under-menu
+{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sign-up-container-center-form
+{
+    width: 30%;
+    border-radius: 10px;
+    background-color: rgb(0,0,0,0.3);   
+    backdrop-filter: blur(5px);
+    max-height: 520px;
+}
+.sign-up-container-title
+{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up-container-form-container
+{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+.sign-up-title-padding
+{
+    height: 50%;
+    width: 50%;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffb235;
+}
+.sign-up-form-container-padding
+{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.sign-up-form
+{
+    width: 100%;
+}
+.sign-up-form label
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+.sign-up-form label span 
+{
+    font-size: 1.2em;
+    margin: 8px 0px;
+}
+.sign-up-form input 
+{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    border-bottom: 3px solid transparent;
+}
+.sign-up-form input:focus
+{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 3px solid #ffb235;
+    transition: border-bottom 0.8s ease;
+}
+.submit-btn-label
+{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.sign-up-form button 
+{
+    height: 80%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #ffb235;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 0.7em;
+    border-radius: 3px;
+}
+.sign-up-form button:hover
+{
+    cursor: pointer;
+    color: black;
+    padding: 4px 17px;
+    transform: scale(1.06);
+    transition: color 0.6s ease, transform 0.2s ease;
+}
+.change-state-signin-signup
+{
+    text-align: center;
+}
+.change-state-signin-signup p 
+{
+    color:#ffb235;
+    font-size: 0.9em;
+}
+.change-state-signin-signup p:hover
+{
+    color: white;
+    transition: color 0.3s ease;
+}

@@ -6,6 +6,9 @@ const dotenv = require('dotenv');
 //Import routers
 const authRoute = require('./routes/auth'); 
 const postRoute = require('./routes/posts');
+const postNew = require('./routes/postNew');
+const fetchProperty = require('./routes/fetchProperty');
+const otherSection = require('./routes/otherSection');
 
 const cors = require('cors')
 app.use(cors())
@@ -44,8 +47,9 @@ app.use(express.json());
 //anythin in authRoute will have '/api/user prefix => /api/user/register
 app.use('/api/user',authRoute);
 app.use('/api/posts',postRoute);
-
-
+app.use('/api/newpost',postNew);
+app.use('/api/fetchProperty', fetchProperty);
+app.use('/api/otherSection',otherSection);
 
 
 app.listen(PORT,()=>{
