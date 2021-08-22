@@ -1,0 +1,65 @@
+.buy-container
+{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.map-buy-container
+{
+    height: 100%;
+    width: 40%;
+    padding: 10px 20px;
+}
+.content-container
+{
+    height: 100%;
+    width: 60%;
+    -webkit-box-shadow: -22px 0px 24px -15px rgba(0,0,0,0.24); 
+box-shadow: -22px 0px 24px -15px rgba(0,0,0,0.13);
+    
+}
+.content-container-search
+{
+    width: 100%;
+    -webkit-box-shadow: 0px 30px 24px -15px rgba(0,0,0,0.27); 
+box-shadow: 0px 30px 24px -15px rgba(0,0,0,0.13);
+    height: 50%;
+    
+}
+.content-container-search form 
+{
+    height: 100%;
+}
+.content-container-search-results
+{
+    width: 100%;
+    min-width: 500px;
+    max-height: 55%;
+    overflow-y: scroll;
+}
+.buy-upper-form
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+}
+.buy-middle-form
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 90px;
+    flex-wrap: wrap;
+
+}
+.buy-lower-form
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 90px;
+    flex-wrap: wrap;
+
+}

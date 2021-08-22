@@ -33,6 +33,7 @@ const propertySchema = new mongoose.Schema({
     rooms:Number,
     baths: Number,
     beds:Number,
+    location: String,
 
     long: Number,
     lat: Number,

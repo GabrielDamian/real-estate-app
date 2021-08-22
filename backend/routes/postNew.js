@@ -37,6 +37,7 @@ router.post('/',async (req,res)=>{
                 rooms: temp.rooms,
                 baths: temp.baths,
                 beds: temp.beds,
+                location: temp.location,
             
                 long: temp.long,
                 lat: temp.lat,

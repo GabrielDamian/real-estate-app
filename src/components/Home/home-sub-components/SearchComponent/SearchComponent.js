@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react';
 import './SearchComponent.css';
+import axios from 'axios';
 
 const SearchComponents  = ({changeHomeState})=>{
 
@@ -12,23 +13,45 @@ const SearchComponents  = ({changeHomeState})=>{
         price_to:'',
         rooms: '',
         baths: '',
-        beds: ''
+        beds: '',
+        price_from:'',
+        price_to:''
     })
 
-    const handleInputChange = (e)=>{
+    useEffect(()=>{
+        console.log("input update", input);
+    },[input])
+    const handleInputChange =  (e)=>{
         
         setInput((prev)=>{
             prev[e.target.name] = e.target.value;
             return {...prev}
         })
-
-
-
     }
 
-    const handleSubmit = (e)=>{
+    const handleSubmit = async (e)=>{
         e.preventDefault();
-        changeHomeState('ceva');
+        const config = {
+            headers:{
+                'Content-Type' : 'application/json',
+                'Accept' : 'application/json',
+            },
+            body:{
+                ...input
+            }
+        }
+        
+        try{
+
+            const response = await axios.post('api/filterProps',config)
+            .then((resp)=>{
+                console.log("sss",resp.data);
+                changeHomeState(resp.data.rasp);
+            })
+        }
+        catch(err){
+            console.log(err);
+        }
     }
     return(
         <div className="home-search-component">
@@ -42,10 +65,14 @@ const SearchComponents  = ({changeHomeState})=>{
                                     </span>
                                 </div>
                                 <div class="select">
-                                    <select>
-                                        <option value="1">Location_1</option>
-                                        <option value="2">Location_2</option>
-                                        <option value="3">Location_3</option>
+                                    <select onChange={handleInputChange} name="location">
+                                        <option value="">None</option>
+                                        <option value="europe">Europe</option>
+                                        <option value="north-america">North America</option>
+                                        <option value="south-america">South America</option>
+                                        <option value="asia">Asia</option>
+                                        <option value="africa">Africa</option>
+                                        <option value="other">Other</option>
                                     </select>
                                 </div>
                             </div>
@@ -56,10 +83,12 @@ const SearchComponents  = ({changeHomeState})=>{
                                     </span>
                                 </div>
                                 <div class="select">
-                                    <select>
-                                        <option value="1">Location_1</option>
-                                        <option value="2">Location_2</option>
-                                        <option value="3">Location_3</option>
+                                    <select onChange={handleInputChange} name="type">
+                                        <option value="">None</option>
+                                        <option value="apartament">Apartament</option>
+                                        <option value="building area">Building area</option>
+                                        <option value="house">House</option>
+                                        <option value="villa">Villa</option>
                                     </select>
                                 </div>
                             </div>
@@ -70,10 +99,12 @@ const SearchComponents  = ({changeHomeState})=>{
                                     </span>
                                 </div>
                                 <div class="select">
-                                    <select>
-                                        <option value="1">Location_1</option>
-                                        <option value="2">Location_2</option>
-                                        <option value="3">Location_3</option>
+                                    <select onChange={handleInputChange} name="status">
+                                        <option value="">None</option>
+                                        <option value="available">Available</option>
+                                        <option value="rent agreed ">Rent agreed </option>
+                                        <option value="reserved">Reserved</option>
+                                        <option value="sell agreed">Sell agreed</option>
                                     </select>
                                 </div>
                             </div>
@@ -84,10 +115,14 @@ const SearchComponents  = ({changeHomeState})=>{
                                     </span>
                                 </div>
                                 <div class="select">
-                                    <select>
-                                        <option value="1">Location_1</option>
-                                        <option value="2">Location_2</option>
-                                        <option value="3">Location_3</option>
+                                    <select onChange={handleInputChange} name="material">
+                                        <option value="">None</option>
+                                        <option value="block">Block</option>
+                                        <option value="brick">Brick</option>
+                                        <option value="mixed">Mixed</option>
+                                        <option value="prefab">Prefab</option>
+                                        <option value="stone">Stone</option>
+                                        <option value="wood">Wood</option>
                                     </select>
                                 </div>
                             </div>
@@ -98,7 +133,7 @@ const SearchComponents  = ({changeHomeState})=>{
                                     </span>
                                 </div>
                                 <div className="number-input-box">
-                                    <input type="number"/>
+                                    <input type="number" onChange={handleInputChange} name="price_from"/>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +145,7 @@ const SearchComponents  = ({changeHomeState})=>{
                                         </span>
                                     </div>
                                     <div className="number-input-box">
-                                        <input type="number"/>
+                                        <input type="number" onChange={handleInputChange} name="price_to"/>
                                     </div>
                             </div>
                         
@@ -121,10 +156,11 @@ const SearchComponents  = ({changeHomeState})=>{
                                         </span>
                                     </div>
                                     <div class="select">
-                                        <select>
-                                            <option value="1">Location_1</option>
-                                            <option value="2">Location_2</option>
-                                            <option value="3">Location_3</option>
+                                        <select onChange={handleInputChange} name="rooms">
+                                            <option value="">None</option>
+                                            <option value="+1">+1</option>
+                                            <option value="+2">+2</option>
+                                            <option value="+4">+3</option>
                                         </select>
                                     </div>
                             </div>
@@ -136,10 +172,11 @@ const SearchComponents  = ({changeHomeState})=>{
                                         </span>
                                     </div>
                                     <div class="select">
-                                        <select>
-                                            <option value="1">Location_1</option>
-                                            <option value="2">Location_2</option>
-                                            <option value="3">Location_3</option>
+                                        <select onChange={handleInputChange} name="baths">
+                                            <option value="">None</option>
+                                            <option value="+1">+1</option>
+                                            <option value="+2">+2</option>
+                                            <option value="+4">+3</option>
                                         </select>
                                     </div>
                             </div>
@@ -150,10 +187,11 @@ const SearchComponents  = ({changeHomeState})=>{
                                         </span>
                                     </div>
                                     <div class="select">
-                                        <select>
-                                            <option value="1">Location_1</option>
-                                            <option value="2">Location_2</option>
-                                            <option value="3">Location_3</option>
+                                        <select onChange={handleInputChange} name="beds">
+                                        <option value="">None</option>
+                                            <option value="+1">+1</option>
+                                            <option value="+2">+2</option>
+                                            <option value="+4">+3</option>
                                         </select>
                                     </div>
                             </div>

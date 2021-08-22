@@ -11,6 +11,7 @@ const Home = ()=>{
     const [showResults, setShowResults] = useState(null);
 
     const changeHomeState = (newState)=>{
+        console.log("update in parent!:",newState);
         setShowResults(newState);
     }
     return(

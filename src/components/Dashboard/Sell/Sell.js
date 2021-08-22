@@ -19,6 +19,7 @@ const Sell = ()=>{
         rooms: 0,
         baths: 0,
         beds: 0,
+        location: '',
         images: [],
         lat:0,
         long:0
@@ -307,6 +308,26 @@ const Sell = ()=>{
                             </div>
 
 
+                        </div>
+                        <div className="triple-inputs">
+                        <div className="form-box-container">
+                                <div className="box-title-container">
+                                    <span>
+                                        Location:
+                                    </span>
+                                </div>
+                                <div class="select">
+                                    <select name="location" onChange={handleInputChange}>
+                                        <option value="">None</option>
+                                        <option value="europe">Europe</option>
+                                        <option value="africa">Africa</option>
+                                        <option value="north-america">North America</option>
+                                        <option value="south-america">South America</option>
+                                        <option value="asia">Asia</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
 
                         <div className='box-title-container' style={{padding: '0px 10px',}}>

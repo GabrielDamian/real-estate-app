@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.search-results-container
+{
+    width: 100%;
+
+
+}
+.search-results-push-search-input
+{
+    height: 130px;
+}
+.search-results-content
+{
+    padding: 20px 30px;
+
+}
+.search-result-item
+{
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.62); 
+box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.62);
+}
+.search-result-image-cont
+{
+    width: 30%;
+    height: 100%;
+}
+.search-result-image-cont img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.search-result-item-content
+{
+    height: 100%;
+    width: 50%;
+}
+.search-input-item-price
+{
+    height: 100%;
+    width: 20%;
+}
+.item-content-upper
+{
+    height: 50%;
+    border-bottom: 1px solid rgb(145, 145, 145);
+}
+.item-content-lower
+{
+    height: 50%;
+    padding: 10px 20px;
+    font-size: 0.7em;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(82, 82, 82);
+
+}
+.content-upper-title
+{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.content-upper-details
+{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    color: #444444;
+
+}
+.upper-details-box
+{
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upper-details-box img 
+{
+    height: 20px;
+}
+.upper-details-box span
+{
+    margin-left: 15px;
+}
+.item-padding
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.item-padding button
+{
+    background-color: #ffb235;
+    height: 45%;
+    width: 50%;
+    outline: none;
+    border: none;   
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+}
+.item-padding button:hover
+{
+    color: white;
+    transform: scale(1.1);
+    font-size: 0.9em;
+    transition: color 0.3s ease, transform 0.3s ease, font-size 0.3s ease;
+}

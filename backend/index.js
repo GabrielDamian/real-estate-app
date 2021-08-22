@@ -9,6 +9,7 @@ const postRoute = require('./routes/posts');
 const postNew = require('./routes/postNew');
 const fetchProperty = require('./routes/fetchProperty');
 const otherSection = require('./routes/otherSection');
+const filterProps = require('./routes/filterProps');
 
 const cors = require('cors')
 app.use(cors())
@@ -50,7 +51,7 @@ app.use('/api/posts',postRoute);
 app.use('/api/newpost',postNew);
 app.use('/api/fetchProperty', fetchProperty);
 app.use('/api/otherSection',otherSection);
-
+app.use('/api/filterProps',filterProps);
 
 app.listen(PORT,()=>{
     console.log(`Server is listening on port ${PORT}`)

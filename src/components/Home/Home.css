@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 .home-container {
   height: 100vh;
+  min-width: 800px;
   overflow-x: hidden;
   overflow-y: scroll;
   perspective: 10px;

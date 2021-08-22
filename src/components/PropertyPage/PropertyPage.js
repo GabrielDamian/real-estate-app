@@ -38,7 +38,7 @@ const PropertyPage = (props)=>{
                 setContent(<PropertyPageItself data={ceva.data.gasit} />)
             })
             .catch((err)=>{
-                if(err.response.status == 404)
+                if(err.response.status == 404 )
                 {
                     setContent( <InvalidProperty 
                                     text="This property does not exists!"
@@ -49,6 +49,12 @@ const PropertyPage = (props)=>{
                     setContent(<InvalidProperty
                                     text="Internal server problem! (500)"
                                 />)
+                }
+                else if(err.response.status == 403)
+                {
+                    setContent(<InvalidProperty
+                        text="You need to be logged to see the complete property!"
+                    />)
                 }
             })
             
@@ -275,6 +281,17 @@ const PropertyPageItself = ({data})=>{
                                 </div>
                                 <div className="content-elem-row">
                                     {data.beds}
+                                </div>
+                            </div>
+                            <div className="column-elem-row">
+                                <div className="arrow-right">
+                                    <img src={RightArrowIcon} alt="right arrow"/>
+                                </div>
+                                <div className="name-elem-row">
+                                    Location:
+                                </div>
+                                <div className="content-elem-row">
+                                    {data.location}
                                 </div>
                             </div>
                         </div>
