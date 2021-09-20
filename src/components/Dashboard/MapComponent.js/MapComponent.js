@@ -44,9 +44,9 @@ const MapComponent =()=>{
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
             <LocationMarker />
-            <Marker position={[47.60,26.66]}>
+            {/* <Marker position={[47.60,26.66]}>
                 <Popup>Seconds location</Popup>
-            </Marker>
+            </Marker> */}
         </MapContainer>
     )
 }

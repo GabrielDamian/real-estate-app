@@ -53,30 +53,23 @@ const Menu = ({showSignUp})=>{
                 <nav>
                     <ul>
                         <li class="sub-menu-parent" tab-index="0">
-                        <a href="http://google.com">MENU ITEM 1 &#9660;</a>
+                        <a >HOME &#9660;</a>
                         <ul class="sub-menu">
-                            <li><a href="#">Sub Item 1</a></li>
-                            <li><a href="#">Sub Item 2</a></li>
-                            <li><a href="#">Sub Item 3</a></li>
-                            <li><a href="#">Sub Item 4</a></li>
+                            <li><a onClick={()=>{history.push('/')}}>HOMEPAGE</a></li>
                         </ul>
                         </li>
                         <li class="sub-menu-parent" tab-index="0">
-                        <a href="#">MENU ITEM 2 &#9660;</a>
+                        <a href="#">USE APP &#9660;</a>
                         <ul class="sub-menu">
-                            <li><a href="#">Sub Item 1</a></li>
-                            <li><a href="#">Sub Item 2</a></li>
-                            <li><a href="#">Sub Item 3</a></li>
-                            <li><a href="#">Sub Item 4</a></li>
-                            <li><a href="#">Sub Item 5</a></li>
-                            <li><a href="#">Sub Item 6</a></li>
+                            <li><a onClick={()=>{history.push('/login')}}>LOGIN</a></li>
+                            <li><a onClick={()=>{history.push('/signup')}}>SIGN UP</a></li>
                         </ul>
                         </li>
                         <li class="sub-menu-parent" tab-index="0">
-                        <a href="#">MENU ITEM 3 &#9660;</a>
+                        <a href="#">ABOUT &#9660;</a>
                         <ul class="sub-menu">
-                            <li><a href="#">Sub Item 1</a></li>
-                            <li><a href="#">Sub Item 2</a></li>
+                            <li><a onClick={()=>{history.push('/about')}}>ABOUT_1</a></li>
+                            <li><a onClick={()=>{history.push('/about')}}>ABOUT_2</a></li>
                         </ul>
                         </li>
 

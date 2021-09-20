@@ -202,7 +202,7 @@ const PropertyPageItself = ({data})=>{
                                     {data.status}
                                 </div>
                             </div>
-                            <div className="column-elem-row">
+                            {/* <div className="column-elem-row">
                                 <div className="arrow-right">
                                     <img src={RightArrowIcon} alt="right arrow"/>
                                 </div>
@@ -212,7 +212,7 @@ const PropertyPageItself = ({data})=>{
                                 <div className="content-elem-row">
                                     {data.material}
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="column-elem-row">
                                 <div className="arrow-right">
                                     <img src={RightArrowIcon} alt="right arrow"/>

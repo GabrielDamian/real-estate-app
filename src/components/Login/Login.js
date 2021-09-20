@@ -57,7 +57,7 @@ const Login = ()=>{
                                 </label>
                                 <label>
                                     <span>Password</span>
-                                    <input type="text" name="password" onChange={handleInputChange}/>
+                                    <input type="password" name="password" onChange={handleInputChange}/>
                                 </label>
 
                                 <label className="submit-btn-label">

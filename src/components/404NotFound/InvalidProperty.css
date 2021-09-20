@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.invalidprop-container
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../images/404bg.jpg');
+    background-size: cover;
+    position: relative;
+}
+.invalidprop-dark-layer
+{
+    position: absolute;
+    top: 12vh;
+    left: 0;
+    height: 88vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.invalidprop-content-total
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invaldprop-content-short
+{
+    height: 40%;
+    width: 50%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.invalidprop-short-text
+{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+}
+.invaldprop-content-short img 
+{
+    object-fit: contain;
+    height: 80%;
+    margin: auto;
+}

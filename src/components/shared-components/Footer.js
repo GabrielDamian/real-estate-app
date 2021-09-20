@@ -8,8 +8,11 @@ import Linkedin from '../../images/linkedin.png';
 import Skype from '../../images/skype.png';
 import Twiter from '../../images/twitter.png';
 import Whatsapp from '../../images/whatsapp.png';
-
+import { useHistory } from 'react-router';
 const Footer = ()=>{
+
+    const history = useHistory();
+
     return(
         <div className="footer-container">
             <div className="footer-container-padding">
@@ -45,10 +48,10 @@ const Footer = ()=>{
                         </div>
 
                         <div className="right-footer-links-link">
-                            <span>Dashboard</span>
-                            <span>Create-announcement</span>
-                            <span>About us</span>
-                            <span>Report a problem</span>
+                            <span onClick={()=>history.push('/dashboard')}>Dashboard</span>
+                            <span onClick={()=>history.push('/login')}>Login</span>
+                            <span onClick={()=>history.push('/signup')}>SignUp</span>
+                            <span onClick={()=>history.push('/about')}>About us</span>
                         </div>
 
                     </div>
