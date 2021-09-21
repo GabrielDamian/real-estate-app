@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import axios from 'axios';
 
 
-axios.defaults.baseURL = 'http://localhost:4000/';
+axios.defaults.baseURL = 'https://real-estate-app99.herokuapp.com/';
 ReactDOM.render(
   <React.StrictMode>
     <App />
