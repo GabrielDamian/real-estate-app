@@ -1,8 +1,8 @@
 # Messenger App React
 
-Real time messenger application where you can add friends based on user id, customize profile picture, see who's active right now and talk with other users using a live chat.
-
+Real market app where you can buy and sell properties based on specific criteria. Each announcement have a dedicated page with detailed description and map feature.
 HomePage
+
 ![DHCP FSM](https://github.com/GabrielDamian/portfolio/blob/main/src/images/global_Wiki_github/real-estate/1.png)
 
 HomePage Search Results
