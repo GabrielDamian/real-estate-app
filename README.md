@@ -1,4 +1,4 @@
-# Messenger App React
+# Real Estate App React
 
 Real market app where you can buy and sell properties based on specific criteria. Each announcement have a dedicated page with detailed description and map feature.
 HomePage
